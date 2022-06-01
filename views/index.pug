@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title Weather App
+        link(rel="stylesheet" href="../style.css" type="text/css")
+    body
+        section#content
+            h1 Weather
+            form(id="weather-form" method="POST" action="")
+                input(type="text" name="city" value="" placeholder="Location" autofocus)
+                input(type="submit" value="Search")
+            div
+                h1 Location: #{city}, #{region}
+                h1 Temperature: #{temp} F 
+                h1 Rainfall in Inches: #{precipitation}
+                h1 Condition for today: #{condition}
+                

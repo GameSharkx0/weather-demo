@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #c8c8c8;
+}
+h1{
+    font-size: 50px;
+}
+input{
+    font-size: 50px;
+}
