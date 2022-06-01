@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded());
 app.post("/", (req, res) =>{
     const data = req.body;
     const city = data.city;
-    const url_api = `http://api.weatherapi.com/v1/current.json?key=9337151fc0db43a6ab025541223105&q=${city}&aqi=no`;
+    const url_api = `http://api.weatherapi.com/v1/current.json?key=API-KEY-HERE&q=${city}&aqi=no`;
     fetch(url_api)
         .then(res => res.json())
         .then(data => {
